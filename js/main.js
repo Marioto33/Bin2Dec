@@ -13,7 +13,7 @@ function MarioBin2Dec() {
         infobien.innerHTML = 'Here is your decimal!'
         infoerror.innerHTML = ''
     } else {
-        result.innerHTML = '🤷🏻 Waiting for a valid binary number...'
+        result.innerHTML = 'Waiting for a valid binary number...'
     }
     if (numero >> 1 || numero >> 10000) {
         infobien.innerHTML = ''
