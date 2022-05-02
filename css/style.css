@@ -1,21 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Neucha&family=Roboto+Mono:ital@1&display=swap');
 html {
-    font-size: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
 }
 
 
 /* Redimensión de fuente utilizando rem */
 
 p {
-    font-size: 20px;
-    color: white;
-    text-align: center;
+    font-size: 1rem;
 }
 
 h1 {
-    font-size: 60px;
-    text-align: center;
-    color: white;
+    font-size: 3rem;
 }
 
 h2 {
@@ -46,14 +43,10 @@ h6 {
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
 }
 
 body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
 }
 
 
@@ -70,7 +63,7 @@ body {
 
 .column-1 {
     width: 100%;
-    height: 100%;
+    float: left;
 }
 
 .column-2 {
@@ -106,53 +99,16 @@ body {
 
 /* Otras clases */
 
-.color-submit {
-    background-color: orange;
-    border-radius: 7px;
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
-.styles-div {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 3%;
-}
-
-input {
-    width: 100%;
-    background-color: black;
-    border-color: white;
-    color: white;
-    height: 7vh;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+body {
     margin: 0;
+    height: 100vh;
 }
-
-input[type=number] {
-    -moz-appearance: textfield;
-    font-size: 20px;
-}
-
-.botones {
-    width: 48%;
-}
-
-#resultado {
-    text-align: center;
-    color: red;
-}
-
-footer {
-    color: white;
-    text-align: center;
-    height: 10vh;
-}
-
-
-/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
 .flex {
     display: flex;
@@ -160,6 +116,48 @@ footer {
     justify-content: center;
     height: 90vh;
 }
+
+#resultadobinario {
+    background-color: black;
+    border-color: white;
+    height: 60px;
+    width: 400px;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+
+#resultadohexadecimal {
+    background-color: black;
+    border-color: white;
+    height: 60px;
+    width: 400px;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+
+#resultado {
+    text-align: center;
+    color: #e74c3b;
+}
+
+footer {
+    color: #333333;
+    text-align: center;
+    height: 10vh;
+}
+
+#boton {
+    background-color: black;
+    border-color: white;
+    height: 25px;
+    width: 135px;
+    color: white;
+}
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
 @media only screen and (max-width: 600px) {
     /* column-2 pasará de tener 50% a 100% */
@@ -173,5 +171,14 @@ footer {
     /* column-4 pasará de tener 25% a 50% */
     .column-4 {
         width: 50%;
+    }
+    #resultadobinario {
+        width: 80%;
+    }
+    #resultadohexadecimal {
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.7rem;
     }
 }

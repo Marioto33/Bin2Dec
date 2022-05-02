@@ -10,10 +10,16 @@
 </head>
 <body class="flex">
     <div>
-    <h1>Bin2Dec App</h1> 
-    <p>Enter a binary number, get a decimal conversion.</p>
-    <p style="color: green;">Here is your decimal</p>
-    <input class="inputbinario" type="number" name="" id="total">
+        <h1>Bin2Dec App</h1> 
+            <p style="margin:-2.5% 0;">Enter a <span style="background-color: #113a20;">binary number</span>, get a <span style="background-color: #113a20;">decimal</span> conversion.</p>
+            <p id="resultado" style="color: #999999;"></p>
+            <p id="infobien" style="color: #25af60;"></p>
+            <p id="infoerror" style="color: #e74c3b;"></p>
+    <br>
+        <input type="number" placeholder="" id="resultadobinario" value="" onkeyup="MarioBin2Dec()">
+            <p id="result" style="color: #999999;"></p>
+    <br>
+       
 </div>
 
 </body>
